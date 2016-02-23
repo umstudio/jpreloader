@@ -5,7 +5,7 @@
 * Name:			jPreLoader.js
 * Author:		Kenny Ooi - http://www.inwebson.com
 * Date:			July 11, 2012		
-* Version:		2.1
+* Version:		2.1.1 (ums fork)
 * Example:		http://www.inwebson.com/demo/jpreloader-v2/
 *	
 */
