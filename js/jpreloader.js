@@ -92,13 +92,14 @@
 	var loadComplete = function() {
 		$(jBar).stop().animate({
 			width: '100%'
-		}, 500, 'linear', function() {
+		}, 500, 'linear');	
+		setTimeout(function() {
 			$(jOverlay).fadeOut(800);
 			setTimeout(function() {
 				$(jOverlay).remove();
 				onComplete();
 			}, 800);
-		});	
+		}, 800);
 	}
 	
 	var debug = function() {
