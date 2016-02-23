@@ -209,15 +209,16 @@
 			});	
 		}	
 	}
-	
+		
 	//triggered when all images are loaded
 	var loadComplete = function() {
-		$(jOverlay).fadeOut(800, function() {
+		$(jOverlay).fadeOut(800);
+		setTimeout(function() {
 			$(jOverlay).remove();
 			onComplete();	//callback function
-		});
+		}, 800);
 	}
-	
+
 	//debug mode
 	var debug = function() {
 		if(errors.length > 0) {
