@@ -93,10 +93,11 @@
 		$(jBar).stop().animate({
 			width: '100%'
 		}, 500, 'linear', function() {
-			$(jOverlay).fadeOut(800, function() {
+			$(jOverlay).fadeOut(800);
+			setTimeout(function() {
 				$(jOverlay).remove();
 				onComplete();
-			});
+			}, 800);
 		});	
 	}
 	
